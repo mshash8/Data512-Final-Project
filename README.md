@@ -59,28 +59,27 @@ This project was run on jupyter notebook on localhost.
 # Steps to Reproduce these Results
 Data Acquistion, Data Preparation, and Data Analysis are key phases within this project:
 
-* Step 1: Getting the Wildfire and AQI data
-  - Data is obtained from the data sources listed above and to make API calls to get further information required for analysis.
-* Step 2: Filtering out the Data for the Scope of this Sssignment
-  - The data from the previous step is filtered to include only wildfires in a 1250 radius from the source city and for the years 1963-2023.
-* Step 4: Creating a Smoke Estimate
-  - Once the filtered data is obtained, the smoke estimate is calculated using attributes in the wildfire data.
-* Step 5: Time Series Forecasting and Prediction
-  - With the smoke estimate for each year available, a time series forecasting technique is utilized to predict the smoke for future dates for the city of interest.
+* Step 1: Obtaining the Smoke Estimate through the Wildfire Data 
+  - All the cells of the notebook - wildfire_data_analysis.ipynb, can be run to obtain the smoke estimate and visualizations from Phase I of the analysis. More information about how to run these cells and the respective data sources this uses can be found in this [repository](https://github.com/mshash8/data-512-project/tree/main).
+* Step 2: Data Acquisition for Phase II of Analysis
+  - The data for the second phase of analysis is obtained through three data sources mentioned above. This data needs to be downloaded to carry out further analysis.
+* Step 4: Data Preprocessing
+  - Once the data is acquired for analysis, it needs to be preprocessed into pandas dataframes to conduct further analysis.
+* Step 5: Modeling and Correlations
+  - With the data preprocessed, the research study to identify correlations between the tourism industry and the smoke estimate can be further studied by calculating correlations and modeling coefficients.
 * Step 5: Visualization and Analysis
-  - Visualizations and Analysis is done based on prompts provided by the instructor:
-      1. Produce a histogram showing the number of fires occurring every 50 mile distance from your assigned city up to the max specified distance.
-      2. Produce a time series graph of total acres burned per year for the fires occurring in the specified distance from your city.
-      3. Produce a time series graph containing your fire smoke estimate for your city and the AQI estimate for your city.
+  - Visualizations and Analysis are done to ensure that the results and findings of the study are communicated effectively to the audience. 
     
 # Limitations
-* The wildfire dataset provided by USGS does not include data for the years 2021, 2022, and 2023 at a distance of 1250 miles from Lewiston, Idaho.
-
-* In the AQI API, there is no information available for gaseous matter at stations near Lewiston, Idaho, even with the bounding box.
-
+* The lack of tourism industry and outdoor recreation data hinders the ability to make stronger claims and generalize results.
+* The data provided by Idaho Parks and Recreation includes cumulative data for parks in Idaho and the analysis of such data may not directly apply solely to Lewiston.
+* The collected data covers only shorter periods, failing to span a significant number of years as intended for this project.
+* I attempted a Linear Regression analysis with normalized variables, acknowledging that the assumptions made by linear regression models might have been too stringent for this analysis. Given my beginner-level approach to statistical analysis, I am uncertain whether the assumptions of linear regression are fully satisfied, and I cannot confirm the presence of a linear association between the predictor and response variables. Nevertheless, I undertook this modeling effort as a foundational step in statistical analysis.
+* The wildfire dataset provided by the USGS does not include data for the years 2021, 2022, and 2023 within a distance of 1250 miles from Lewiston, Idaho.
+* In the AQI API, there is no information available for gaseous matter at stations near Lewiston, Idaho, even within the bounding box.
 * There is no station directly in Lewiston, Idaho, in the AQI API, and the stations within the bounding boxes also provide information for a limited period, specifically from 1986 to 2023.
-
 * The smoke estimate values range from 3.084128e-10 to 1.435315e+02. Most values are extremely small because many fires burn very small areas located at a significant distance from the city of interest. This potentially lowers the average smoke_estimate, despite the possibility of poor air quality.
+
 
 
 # Documentation
