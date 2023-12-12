@@ -110,20 +110,25 @@ This project is open-source and follows the MIT License. You are free to use and
 # Scripts 
 1. **Path:** scripts/wildfire_data_analysis.ipynb - This file contains the data acquistion, preparation and analysis of the wildfire data from USGS.
 2. **Path:** scripts/aqi_data_acquistion.ipynb - This file contains the data acquistion and API call for the AQI data. This creates an output json of AQI for each year which is read back into the notebook above to create visualizations.
+3. **Path:** Scripts/recreation_lewiston.ipynb - This file contains the data acquistion, preparation and analysis for phase II of this analysis - quantifying the impact of wildfire smoke on the tourism industry in Lewiston.
 
 # Data Files 
 
-1. **Path:** data/predicted_values.json - This file contains the predictions of smoke in Lewiston, Idaho for the years 2024-2049.
+1. **Path:** Data/predicted_values.json - This file contains the predictions of smoke in Lewiston, Idaho for the years 2024-2049.
 
   * year (int) : predicted_smoke_estimate (int)
   * The year field is the year that the smoke_estimate prediction is for
   * The predicted_smoke_estimate is the smoke_estimate for that particular year as predicted by the model
 
-2. **Path:** data/aqi_lewiston.json - This file contains the AQI estimates near Lewiston, Idaho for the years 1986-2023.
+2. **Path:** Data/aqi_lewiston.json - This file contains the AQI estimates near Lewiston, Idaho for the years 1986-2023.
 
   * year (int) : aqi_estimate (int)
   * The year field is the year for each aqi estimate
   * The aqi_estimate is the aqi as returned by the API exposed by the EPA
+    
+3. **Path:** extension_plan/Airline_Delay_Cause.csv - This dataset is published by the Bureau of Transportation and contains information about flights that are delayed versus those that are on time. For the purpose of this analysis, I am concerned with the total number of flights arriving at the Lewiston airport and not particularly with delay statistics and causes. Therefore, this dataset can be used for that purpose.
+4. **Path:** extension_plan/leisure_bls.csv - This dataset is published by the US Bureau of Labor Statistics. It records employment numbers (in thousands) for each month from 1990 to 2023.
+5. **Path:** extension_plan/visitation.csv - This dataset is published by the Department of Parks and Recreation of Idaho. The data resides in a small section of the link posted above under the heading: Visitation Statistics. It counts the number of visitation totals representing combined usage between day-use and overnight camping for state parks in Idaho.
 
 # Helpful Links
 1. [Metadata for Wilfire Polygon Data](https://www.sciencebase.gov/catalog/file/get/61aa537dd34eb622f699df81?f=__disk__d0%2F63%2F53%2Fd063532049be8e1bc83d1d3047b4df1a5cb56f15&transform=1&allowOpen=true)
@@ -138,9 +143,12 @@ This project is open-source and follows the MIT License. You are free to use and
 
 6. [Python Notebook to call EPI Air Quality History Data](https://drive.google.com/file/d/1bxl9qrb_52RocKNGfbZ5znHVqFDMkUzf/view?usp=sharing)
 
+# References
+1. Alexander Maas and Katherine Himes (2021). [Idaho Climate-Economy Impacts Assessment Recreation and Tourism Report](https://www.uidaho.edu/-/media/UIdaho-Responsive/Files/president/direct-reports/mcclure-center/iceia/iceia-recreation-tourism-report-2021.pdf?la=en&hash=205BCA5F5D9EB63DD8F0F0C7555ACF7D8C0FB8EB).
+2. E. M. White, S. G. Winder, S. A. Wood (2023). [Applying novel visitation models using diverse social media to understand recreation change after wildfire and site closure](https://www.tandfonline.com/doi/full/10.1080/08941920.2022.2134531). https://www.tandfonline.com/doi/full/10.1080/08941920.2022.2134531.
 
 # Research Implications
-As part of this project, I had the opportunity to explore wildfires in the USA and its impact on air quality.
+The objective of this study is to quantify and analyze the impact of wildfire smoke on the tourism industry in Lewiston. I used three data sources that I think could best capture the tourism industry and outdoor recreation in Lewiston - visitation data to parks, flight activity data at the Lewiston airport and Leisure industry employment. My hypotheses were to understand the correlation and association between these three aforementioned variables and wildfire smoke. 
 
 
 
