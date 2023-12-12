@@ -14,41 +14,44 @@ The section below details the steps for data acquistion. We have:
 3. A [spreadsheet](https://docs.google.com/spreadsheets/d/1cmTW5fgU3KyH6JbrRao-qWjzu2GovKk_BkA7a-poGFw/edit?usp=drive_link) listing the assignments of people to different cities.
 
 ### Phase II 
-1. Bureau of Transportation - Airline On-Time Statistics and Delay Causes
- * License: CC-BY
-    DOT strongly encourages researchers to deposit data under the Creative Commons CC-BY Attribution or an equivalent license, whenever possible.
-    The CC-BY license allows others to distribute, remix, tweak, and build upon the work, even commercially, as long as they credit the original creator.
- * Relevant Columns:
-  - year: the year in which the flight arrived
-  - month: the month in which the flight arrived (values range from 1-12)
-  - carrier_name: the name of the airline carrier of the flight that arrived at the airport
-  - airport: abbreviation of the airport name that the flight arrived at
-  - airport_name: full name of the airport that the flight arrived at
-  - arr_flights: the total number of flights that arrived at this airport for the specified month and carrier
-Note: There are 15 more columns in this dataset that specify delay causes and the number of minutes of delay. However, since this information is out of the scope and relevance of this study, it will not be used.
-Idaho Park Visitation and Recreation Statistics - Visitation Statistics
-License: Custom 
-The Idaho Department of Parks and Recreation assumes no liability for any loss that may result from the use of this data. The Idaho Department of Parks and Recreation, as a general rule, may modify or delete any of the information that is included in this data without advance notice. The Idaho Department of Parks and Recreation may also interrupt or halt access to this data when deemed necessary. The Idaho Department of Parks and Recreation shall assume no liability for any damages resulting from modification or deletion of this dataset or interruption or halting access to this data.
-Columns:
-year: the year to match with the visitation number
-visitation: the visitation number for that year for Idaho state parks 
-U.S. Bureau of Labor Statistics - Employment Data for the Leisure/Hospitality Industry (1990 - 2023)
-License: Custom
-The Bureau of Labor Statistics (BLS) is a Federal government agency and everything that we publish, both in hard copy and electronically, is in the public domain, except for previously copyrighted photographs and illustrations. You are free to use our public domain material without specific permission, although we do ask that you cite the Bureau of Labor Statistics as the source.
-Columns: 
-Year: the year for which employment numbers are counted
-January: employment numbers for the month of January for each year
-February: employment numbers for the month of February for each year
-March: employment numbers for the month of March for each year
-April: employment numbers for the month of April for each year
-May: employment numbers for the month of May for each year
-June: employment numbers for the month of June for each year
-July: employment numbers for the month of July for each year
-August: employment numbers for the month of August for each year
-September: employment numbers for the month of September for each year
-October: employment numbers for the month of October for each year
-November: employment numbers for the month of November for each year
-December: employment numbers for the month of December for each year
+1. **Bureau of Transportation - Airline On-Time Statistics and Delay Causes**
+   - **License:** CC-BY
+   - DOT strongly encourages researchers to deposit data under the Creative Commons CC-BY Attribution or an equivalent license, whenever possible.
+   - The CC-BY license allows others to distribute, remix, tweak, and build upon the work, even commercially, as long as they credit the original creator.
+   - **Relevant Columns:**
+     - year: the year in which the flight arrived
+     - month: the month in which the flight arrived (values range from 1-12)
+     - carrier_name: the name of the airline carrier of the flight that arrived at the airport
+     - airport: abbreviation of the airport name that the flight arrived at
+     - airport_name: full name of the airport that the flight arrived at
+     - arr_flights: the total number of flights that arrived at this airport for the specified month and carrier
+   - *Note:* There are 15 more columns in this dataset that specify delay causes and the number of minutes of delay. However, since this information is out of the scope and relevance of this study, it will not be used.
+
+2. **Idaho Park Visitation and Recreation Statistics - Visitation Statistics**
+   - **License:** Custom 
+   - The Idaho Department of Parks and Recreation assumes no liability for any loss that may result from the use of this data. The Idaho Department of Parks and Recreation, as a general rule, may modify or delete any of the information that is included in this data without advance notice. The Idaho Department of Parks and Recreation may also interrupt or halt access to this data when deemed necessary. The Idaho Department of Parks and Recreation shall assume no liability for any damages resulting from modification or deletion of this dataset or interruption or halting access to this data.
+   - **Columns:**
+     - year: the year to match with the visitation number
+     - visitation: the visitation number for that year for Idaho state parks 
+
+3. **U.S. Bureau of Labor Statistics - Employment Data for the Leisure/Hospitality Industry (1990 - 2023)**
+   - **License:** Custom
+   - The Bureau of Labor Statistics (BLS) is a Federal government agency and everything that we publish, both in hard copy and electronically, is in the public domain, except for previously copyrighted photographs and illustrations. You are free to use our public domain material without specific permission, although we do ask that you cite the Bureau of Labor Statistics as the source.
+   - **Columns:**
+     - Year: the year for which employment numbers are counted
+     - January: employment numbers for the month of January for each year
+     - February: employment numbers for the month of February for each year
+     - March: employment numbers for the month of March for each year
+     - April: employment numbers for the month of April for each year
+     - May: employment numbers for the month of May for each year
+     - June: employment numbers for the month of June for each year
+     - July: employment numbers for the month of July for each year
+     - August: employment numbers for the month of August for each year
+     - September: employment numbers for the month of September for each year
+     - October: employment numbers for the month of October for each year
+     - November: employment numbers for the month of November for each year
+     - December: employment numbers for the month of December for each year
+
 
 # Platform
 This project was run on jupyter notebook on localhost. 
