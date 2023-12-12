@@ -15,16 +15,16 @@ The section below details the steps for data acquistion. We have:
 
 ### Phase II 
 1. Bureau of Transportation - Airline On-Time Statistics and Delay Causes
-  * License: CC-BY
+ * License: CC-BY
     DOT strongly encourages researchers to deposit data under the Creative Commons CC-BY Attribution or an equivalent license, whenever possible.
-The CC-BY license allows others to distribute, remix, tweak, and build upon the work, even commercially, as long as they credit the original creator.
-Relevant Columns:
-year: the year in which the flight arrived
-month: the month in which the flight arrived (values range from 1-12)
-carrier_name: the name of the airline carrier of the flight that arrived at the airport
-airport: abbreviation of the airport name that the flight arrived at
-airport_name: full name of the airport that the flight arrived at
-arr_flights: the total number of flights that arrived at this airport for the specified month and carrier
+    The CC-BY license allows others to distribute, remix, tweak, and build upon the work, even commercially, as long as they credit the original creator.
+ * Relevant Columns:
+  - year: the year in which the flight arrived
+  - month: the month in which the flight arrived (values range from 1-12)
+  - carrier_name: the name of the airline carrier of the flight that arrived at the airport
+  - airport: abbreviation of the airport name that the flight arrived at
+  - airport_name: full name of the airport that the flight arrived at
+  - arr_flights: the total number of flights that arrived at this airport for the specified month and carrier
 Note: There are 15 more columns in this dataset that specify delay causes and the number of minutes of delay. However, since this information is out of the scope and relevance of this study, it will not be used.
 Idaho Park Visitation and Recreation Statistics - Visitation Statistics
 License: Custom 
